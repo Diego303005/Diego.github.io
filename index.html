@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Señas con MediaPipe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestor de Señas con MediaPipe</h1>
+
+  <div class="camera-and-canvas-container">
+    <video id="webcam" autoplay playsinline muted></video>
+    <canvas id="output"></canvas>
+  </div>
+
+  <div id="recognizedGesture"></div> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>
